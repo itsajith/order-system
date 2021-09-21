@@ -6,7 +6,6 @@ class Order < ApplicationRecord
 
   after_save :recalculate
 
-
   def recalculate
     self.subtotal = line_items.sum(&:subtotal)
     self.tax = line_items.sum(&:tax)

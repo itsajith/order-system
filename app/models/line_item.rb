@@ -11,8 +11,9 @@ class LineItem < ApplicationRecord
   private
 
   def set_data
-    self.subtotal = quantity * amount.to_f
-    self.tax = subtotal * 0.008
-    self.total = subtotal + (subtotal * 0.008)
+    taxpercentage = 0.008
+    self.subtotal = quantity * amount
+    self.tax = subtotal * taxpercentage
+    self.total = subtotal + (subtotal * taxpercentage)
   end
 end
