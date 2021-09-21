@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  order: one
+  quantity: 1
+  amount: 9.99
+  subtotal: 9.99
+  tax: 9.99
+  total: 9.99
+
+two:
+  order: two
+  quantity: 1
+  amount: 9.99
+  subtotal: 9.99
+  tax: 9.99
+  total: 9.99
